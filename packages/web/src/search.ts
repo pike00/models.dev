@@ -78,8 +78,8 @@ function documentFor(item: SearchIndexItem) {
 function scoreSearchItem(item: SearchIndexItem, query: string) {
   if (!query) return 1;
   const doc = documentFor(item);
-  const compact = query.replaceAll(" ", "");
-  if ([doc.title, doc.id].some(field => field === query || field.replaceAll(" ", "") === compact)) {
+  const compact = query.replace(/ /g, "");
+  if ([doc.title, doc.id].some(field => field === query || field.replace(/ /g, "") === compact)) {
     return 10000 - doc.id.split(" ").length;
   }
   const terms = query.split(" ");
