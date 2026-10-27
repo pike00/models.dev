@@ -1,0 +1,434 @@
+{
+  "description": "40 manually curated representative queries grounded in the catalog; not sampled from usage logs. Expected entries are acceptable rank-one results. Empty expected means no results.",
+  "cases": [
+    {
+      "category": "base-model",
+      "query": "2.5 flash",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash"
+        }
+      ],
+      "exclude": [
+        "zhipuai/glm-4.5-flash",
+        "minimax"
+      ]
+    },
+    {
+      "category": "base-model",
+      "query": "Gemini 2.5 Flash",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash"
+        }
+      ],
+      "exclude": [
+        "zhipuai/glm-4.5-flash",
+        "minimax"
+      ]
+    },
+    {
+      "category": "base-model",
+      "query": "google/gemini-2.5-flash",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash"
+        }
+      ],
+      "exclude": [
+        "zhipuai/glm-4.5-flash",
+        "minimax"
+      ]
+    },
+    {
+      "category": "base-model",
+      "query": "gemini-2.5-flash",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash"
+        }
+      ],
+      "exclude": [
+        "zhipuai/glm-4.5-flash",
+        "minimax"
+      ]
+    },
+    {
+      "category": "base-model",
+      "query": "GEMINI 2.5 FLASH",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash"
+        }
+      ],
+      "exclude": [
+        "zhipuai/glm-4.5-flash",
+        "minimax"
+      ]
+    },
+    {
+      "category": "base-model",
+      "query": "  gemini   2.5   flash  ",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash"
+        }
+      ],
+      "exclude": [
+        "zhipuai/glm-4.5-flash",
+        "minimax"
+      ]
+    },
+    {
+      "category": "base-model",
+      "query": "flash 2.5",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash"
+        }
+      ],
+      "exclude": [
+        "zhipuai/glm-4.5-flash",
+        "minimax"
+      ]
+    },
+    {
+      "category": "base-model",
+      "query": "google 2.5 flash",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash"
+        }
+      ],
+      "exclude": [
+        "zhipuai/glm-4.5-flash",
+        "minimax"
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "2.5 flash lite",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash-lite"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "gemini 2.5 flash image",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash-image"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "nano banana",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash-image"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "gemini 2.5 flash tts",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash-tts"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "2.5 flash preview 05-20",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash-preview-05-20"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "2.5 flash lite preview 09-2025",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash-lite-preview-09-2025"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "glm 4.5 flash",
+      "expected": [
+        {
+          "type": "model",
+          "id": "zhipuai/glm-4.5-flash"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "gpt 4.1",
+      "expected": [
+        {
+          "type": "model",
+          "id": "openai/gpt-4.1"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "gpt-4.1-mini",
+      "expected": [
+        {
+          "type": "model",
+          "id": "openai/gpt-4.1-mini"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "4.1 nano",
+      "expected": [
+        {
+          "type": "model",
+          "id": "openai/gpt-4.1-nano"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "claude sonnet 4.6",
+      "expected": [
+        {
+          "type": "model",
+          "id": "anthropic/claude-sonnet-4-6"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "claude sonnet 4.5",
+      "expected": [
+        {
+          "type": "model",
+          "id": "anthropic/claude-sonnet-4-5-20250929"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "deepseek v3.2",
+      "expected": [
+        {
+          "type": "model",
+          "id": "deepseek/deepseek-v3.2"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "deepseek v3.1",
+      "expected": [
+        {
+          "type": "model",
+          "id": "deepseek/deepseek-v3.1"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "qwen3 coder next",
+      "expected": [
+        {
+          "type": "model",
+          "id": "alibaba/qwen3-coder-next"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "qwen3 coder flash",
+      "expected": [
+        {
+          "type": "model",
+          "id": "alibaba/qwen3-coder-flash"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "kimi k2.5",
+      "expected": [
+        {
+          "type": "model",
+          "id": "moonshotai/kimi-k2.5"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "kimi k2 thinking turbo",
+      "expected": [
+        {
+          "type": "model",
+          "id": "moonshotai/kimi-k2-thinking-turbo"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "mistral small 4",
+      "expected": [
+        {
+          "type": "model",
+          "id": "mistral/mistral-small-2603"
+        }
+      ]
+    },
+    {
+      "category": "model-or-variant",
+      "query": "mistral small 3.2 24b",
+      "expected": [
+        {
+          "type": "model",
+          "id": "mistral/mistral-small-3.2-24b-instruct"
+        }
+      ]
+    },
+    {
+      "category": "provider",
+      "query": "openrouter",
+      "expected": [
+        {
+          "type": "provider",
+          "id": "openrouter"
+        }
+      ]
+    },
+    {
+      "category": "provider",
+      "query": "OpenRouter",
+      "expected": [
+        {
+          "type": "provider",
+          "id": "openrouter"
+        }
+      ]
+    },
+    {
+      "category": "provider",
+      "query": "open router",
+      "expected": [
+        {
+          "type": "provider",
+          "id": "openrouter"
+        }
+      ]
+    },
+    {
+      "category": "lab-or-provider",
+      "query": "Google",
+      "expected": [
+        {
+          "type": "lab",
+          "id": "google"
+        },
+        {
+          "type": "provider",
+          "id": "google"
+        }
+      ]
+    },
+    {
+      "category": "lab-or-provider",
+      "query": "Anthropic",
+      "expected": [
+        {
+          "type": "lab",
+          "id": "anthropic"
+        },
+        {
+          "type": "provider",
+          "id": "anthropic"
+        }
+      ]
+    },
+    {
+      "category": "lab-or-provider",
+      "query": "OpenAI",
+      "expected": [
+        {
+          "type": "lab",
+          "id": "openai"
+        },
+        {
+          "type": "provider",
+          "id": "openai"
+        }
+      ]
+    },
+    {
+      "category": "typo",
+      "query": "gemni 2.5 flash",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash"
+        }
+      ]
+    },
+    {
+      "category": "typo",
+      "query": "gemini 2.5 flsh",
+      "expected": [
+        {
+          "type": "model",
+          "id": "google/gemini-2.5-flash"
+        }
+      ]
+    },
+    {
+      "category": "typo",
+      "query": "cluade sonnet 4.6",
+      "expected": [
+        {
+          "type": "model",
+          "id": "anthropic/claude-sonnet-4-6"
+        }
+      ]
+    },
+    {
+      "category": "no-result",
+      "query": "zzzxxyy nonexistent model",
+      "expected": []
+    },
+    {
+      "category": "no-result",
+      "query": "gemini 9.9 flash",
+      "expected": []
+    },
+    {
+      "category": "no-result",
+      "query": "gpt 99.99",
+      "expected": []
+    }
+  ]
+}
