@@ -275,27 +275,6 @@ $ bun run dev
 
 And it'll open the frontend at http://localhost:3000
 
-### Search quality evaluation
-
-With the frontend running, evaluate the 40 curated queries against its live search index:
-
-```bash
-cd packages/web
-bun run search:evaluate
-bun run search:check
-```
-
-`search:evaluate` reports the baseline; `search:check` exits nonzero when a quality
-expectation fails. The queries are representative catalog examples, not production
-usage logs. Expected results, acceptable lab/provider alternatives, and no-result
-queries live in `packages/web/test/search-queries.json`.
-
-Set `SEARCH_BASE_URL` to target another instance and `SEARCH_REPORT_PATH` to save
-JSON. Metrics include rank-one accuracy, top-five coverage, reciprocal rank,
-irrelevant-result exclusions, no-result correctness, and ranking duration.
-The evaluator imports the browser's ranking function. Durations exclude network
-and DOM rendering; ranks are limited to the UI's 40-result cap.
-
 ### Manual testing with opencode
 
 You can manually check provider changes with opencode by:

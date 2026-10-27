@@ -3,9 +3,7 @@
   "name": "@models.dev/web",
   "scripts": {
     "dev": "bun run --hot ./src/server.ts",
-    "build": "./script/build.ts",
-    "search:evaluate": "bun ./script/evaluate-search.ts",
-    "search:check": "bun ./script/evaluate-search.ts --check"
+    "build": "./script/build.ts"
   },
   "dependencies": {
     "@tanstack/virtual-core": "^3.14.0",
